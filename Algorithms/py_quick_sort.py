@@ -1,4 +1,4 @@
-def py_quicksort(arr):
+def quicksort(arr):
     left = []
     middle = []
     right = []
@@ -14,7 +14,8 @@ def py_quicksort(arr):
                 left.append(i)
             else:
                 middle.append(pivot)
-        # Now divide and conquer recurisvely to sort the sub-arrays of left and right and combine it with middle
+        # Now divide and conquer recurisvely to sort the sub-arrays of left
+        # and right and combine it with middle
         return quicksort(left) + middle + quicksort(right)
         
 test = [15, 25, 1337, 5, 69, 200, 420]
